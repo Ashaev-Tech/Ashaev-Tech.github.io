@@ -493,12 +493,50 @@ export default function App() {
                   marginBottom: "2.5rem",
                 }}
               >
-                5+ years of experience automating business processes, data engineering,
-                and full-stack system integration. Specializes in scalable solutions
-                using Golang, Python, R, and DevOps tooling. Experienced in machine learning
-                and data visualization. Proven track record with international teams
-                and end-to-end project ownership.
+                5+ лет опыта в автоматизации бизнес-процессов, инженерии данных
+                и интеграции full-stack систем. Специализируюсь на масштабируемых решениях
+                с использованием Golang, Python, R и инструментов DevOps. Опытен в machine learning
+                и визуализации данных. Доказанный опыт работы в международных командах
+                с полным владением проектами от начала до конца.
               </p>
+              {/* Contractor badge */}
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "flex-start",
+                  gap: "1rem",
+                  border: `1px solid ${C.border}`,
+                  padding: "1rem 1.25rem",
+                  marginBottom: "2.8rem",
+                  maxWidth: 520,
+                }}
+              >
+                <div
+                  style={{
+                    width: 6,
+                    height: 6,
+                    borderRadius: "50%",
+                    background: C.text,
+                    marginTop: 6,
+                    flexShrink: 0,
+                    animation: "pulse-dot 2.5s ease-in-out infinite",
+                  }}
+                />
+                <p
+                  style={{
+                    fontFamily: font.body,
+                    fontSize: "0.82rem",
+                    lineHeight: 1.65,
+                    color: C.muted,
+                  }}
+                >
+                  <span style={{ color: C.text, fontWeight: 600 }}>
+                    Открыт для контрактов.
+                  </span>{" "}
+                  Доступен для найма через российскую организацию —
+                  упрощение международных договоров и платежей.
+                </p>
+              </div>
               {/* Stats */}
               <div
                 className="stats-row"
